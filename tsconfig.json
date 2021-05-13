@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "strict": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "paths": {
+      "@ab/*": ["./src/*"]
+    },
+    "types": ["puppeteer", "jest-environment-puppeteer", "expect-puppeteer"]
+  },
+  "include": [
+    "./src",
+    "./config",
+    "node_modules/@types/puppeteer/index.d.ts",
+    "node_modules/lighthouse/types/**/*.d.ts",
+    "tests/puppet.spec.ts"
+  ],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

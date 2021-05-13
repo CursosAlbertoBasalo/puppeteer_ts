@@ -1,0 +1,31 @@
+{
+  "baseUrl": "https://angular.builders",
+  "visitAllSite": true,
+  "puppeteer": {
+    "args": ["--disable-infobars"],
+    "dumpio": true,
+    "headless": true,
+    "defaultViewport": {
+      "width": 1080,
+      "height": 1920,
+      "isMobile": false
+    }
+  },
+  "lighthouse": {
+    "output": "json",
+    "onlyCategories": ["performance"],
+    "onlyAudits": ["first-meaningful-paint", "speed-index", "first-cpu-idle", "interactive"]
+  },
+  "pageMetrics": {
+    "outputDir": "./output",
+    "format": ".json"
+  },
+  "screenshot": {
+    "takeScreenshot": false,
+    "type": "png",
+    "fullPage": true
+  },
+  "accessibility": {
+    "report": false
+  }
+}
