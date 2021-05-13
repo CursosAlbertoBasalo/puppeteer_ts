@@ -1,8 +1,8 @@
-# muon
+# Puppeteer TS
 
-A metrics collector and smoke test runner based on Puppeteer, Lighthouse and Jest
+A TypeScript app using Puppeteer and LightHouse
 
-> Clone or fork to use like a template for creating yours.
+> Based on a more _real life_ example [muon](https://github.com/AtomicBuilders/muon)
 
 ## Puppeteer and Lighthouse
 

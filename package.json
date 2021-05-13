@@ -19,6 +19,8 @@
   "scripts": {
     "start": "node ./dist/src/main.js",
     "prestart": "npm run build",
+    "start:simple": "node ./dist/src/simple.js",
+    "prestart:simple": "npm run build",
     "build": "tsc  -p tsconfig.json",
     "dev": "ts-node ./src/main.ts",
     "test": "jest --config ./jest.config.js",

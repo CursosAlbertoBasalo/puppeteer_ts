@@ -4,7 +4,7 @@
   "puppeteer": {
     "args": ["--disable-infobars"],
     "dumpio": true,
-    "headless": true,
+    "headless": false,
     "defaultViewport": {
       "width": 1080,
       "height": 1920,
